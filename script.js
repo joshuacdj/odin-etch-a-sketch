@@ -35,3 +35,14 @@ function addSquaresToContainer(count) {
 const GRID_SIZE = 16;
 
 addSquaresToContainer(GRID_SIZE);
+
+let squares = document.querySelectorAll(".square");
+
+squares.forEach(function(square) {
+
+    square.addEventListener("mouseover", function() {
+
+        square.classList.add("coloured");
+
+    });
+});
